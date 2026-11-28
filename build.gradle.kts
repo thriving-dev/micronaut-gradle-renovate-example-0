@@ -1,7 +1,7 @@
 plugins {
     id("com.github.johnrengelman.shadow") version "8.1.1"
-    id("io.micronaut.application") version "4.3.6"
-    id("io.micronaut.aot") version "4.3.6"
+    id("io.micronaut.application") version "5.0.2"
+    id("io.micronaut.aot") version "5.0.2"
 }
 
 version = "0.0.1"
@@ -33,12 +33,12 @@ dependencies {
     runtimeOnly("ch.qos.logback:logback-classic")
 
     testImplementation("io.micronaut:micronaut-http-client")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.10.2")
+    testImplementation("org.junit.jupiter:junit-jupiter:6.1.3")
 
-    intTestImplementation("org.junit.jupiter:junit-jupiter:5.10.2")
-    intTestImplementation("org.testcontainers:testcontainers:1.19.7")
-    intTestImplementation("org.testcontainers:junit-jupiter:1.19.7")
-    intTestImplementation("org.assertj:assertj-core:3.25.3")
+    intTestImplementation("org.junit.jupiter:junit-jupiter:6.1.3")
+    intTestImplementation("org.testcontainers:testcontainers:2.0.5")
+    intTestImplementation("org.testcontainers:junit-jupiter:1.21.4")
+    intTestImplementation("org.assertj:assertj-core:3.27.7")
 }
 
 application {
